@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="static/css/style.css" />
     
     <script type="text/javascript" src="static/js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="static/js/header.js"></script>
     <script type="text/javascript" src="static/js/home_tabs.js"></script>
     
     <!--[if lt IE 9]>
@@ -29,54 +30,62 @@
     </h1>
     
     <!-- NAVIGATION -->
-    <!-- The Index -->
-    <nav class="main_menu index">
-        <h3>
-            <a href="index.html">The Index</a>
-        </h3>
-        <ul>
-            <li>
+    <div id="navigation">
+        <!-- The Index -->
+        <nav class="menu index">
+            <h3>
                 <a href="index.html">The Index</a>
-            </li>
-            <li>
-                <a href="performance.html">Performance</a>
-            </li>
-            <li>
-                <a href="faq.html">FAQs</a>
-            </li>
-        </ul>
-    </nav>
-    <!-- Research & Education -->
-    <nav class="main_menu research">
-        <h3>
-            <a href="research.html">Research &amp; Education</a>
-        </h3>
-        <ul>
-            <li>
+            </h3>
+            <div class="sub_menu">
+                <ul>
+                    <li>
+                        <a href="index.html">The Index</a>
+                    </li>
+                    <li>
+                        <a href="performance.html">Performance</a>
+                    </li>
+                    <li>
+                        <a href="faq.html">FAQs</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Research & Education -->
+        <nav class="menu research">
+            <h3>
                 <a href="research.html">Research &amp; Education</a>
-            </li>
-            <li>
-                <a href="academy.html">Risk Parity Academy</a>
-            </li>
-        </ul>
-    </nav>
-    <!-- About Salient -->
-    <nav class="main_menu about">
-        <h3>
-            <a href="about.html">About Salient</a>
-        </h3>
-        <ul>
-            <li>
+            </h3>
+            <div class="sub_menu">
+                <ul>
+                    <li>
+                        <a href="research.html">Research &amp; Education</a>
+                    </li>
+                    <li>
+                        <a href="academy.html">Risk Parity Academy</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- About Salient -->
+        <nav class="menu about">
+            <h3>
                 <a href="about.html">About Salient</a>
-            </li>
-            <li>
-                <a href="personnel.html">Key Personnel</a>
-            </li>
-            <li>
-                <a href="contact.html">Contact Us</a>
-            </li>
-        </ul>
-    </nav>
+            </h3>
+            <div class="sub_menu">
+                <ul>
+                    <li>
+                        <a href="about.html">About Salient</a>
+                    </li>
+                    <li>
+                        <a href="personnel.html">Key Personnel</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
     
 </header>
 
@@ -85,26 +94,26 @@
     
     <!-- Sidebar -->
     <section id="sidebar">
-        <div class="tab index active">
+        <div class="tab index current">
             <h3>
-                <a href="#" rel="index_tab">The Index</a>
+                <a href="index.html" rel="index_tab">The Index</a>
             </h3>
         </div>
         <div class="tab research">
             <h3>
-                <a href="#" rel="research_tab">Research &amp; Education</a>
+                <a href="research.html" rel="research_tab">Research &amp; Education</a>
             </h3>
         </div>
         <div class="tab about">
             <h3>
-                <a href="#" rel="about_tab">About Salient</a>
+                <a href="about.html" rel="about_tab">About Salient</a>
             </h3>
         </div>
     </section>
     
     <!-- Main Content -->
     <section id="main">
-        <div id="index_tab" class="tab index active">
+        <div id="index_tab" class="tab index current">
             <h2>
                 <p>A new tool for measuring</p>
                 <p>risk parity strategies</p>
