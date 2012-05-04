@@ -1,0 +1,225 @@
+/*clearfix with overflow*/
+footer {
+    overflow: hidden;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Myriad Pro', 'Lucida Grande', 'Lucida Sans', Verdana, Arial, sans-serif;
+    font-size: 62.5%;
+    color: #000000;
+}
+
+header,
+.content,
+footer {
+    width: 960px;
+    margin: 0 auto;
+}
+
+a,
+a:hover,
+a:focus,
+a:visited {
+    text-decoration: none;
+    color: #000000;
+}
+
+/*HEADER---------------------------------------*/
+header {
+    height: 94px;
+    margin-bottom: 40px;
+}
+
+header #logo {
+    width: 334px;
+    height: 31px;
+    margin-top: 57px;
+    font-size: 4em;
+    float: left;
+}
+
+header nav.main_menu {
+    margin-top: 66px;
+    float: right;
+}
+
+header nav.main_menu h3 a {
+    color: #000000;
+    font-size: 2em;
+    padding: 9px;
+}
+
+header nav.main_menu h3 a:hover {
+/*    font-family: 'Myriad Pro Bold', 'Lucida Grande Bold', 'Lucida Sans', Verdana, Arial, sans-serif;*/
+    color: #FFFFFF;
+}
+
+header nav.main_menu.index h3 a:hover {
+    background-color: #79AFDD;
+}
+
+header nav.main_menu.research h3 a:hover {
+    background-color: #9EBA38;
+}
+
+header nav.main_menu.about h3 a:hover {
+    background-color: #F8981D;
+}
+
+header nav.main_menu ul {
+    display: none;
+}
+
+
+/*HOME PAGE-----------------------------------*/
+
+/*clearfix with overflow*/
+.content #main h2 {
+    overflow: hidden;
+}
+
+/*Sidebar--------------------------------------*/
+.content {
+    position: relative;
+    height: 460px;
+}
+
+.content section {
+/*    float: left;*/
+}
+
+.content section#sidebar {
+    width: 345px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
+
+.content section#sidebar .tab {
+    width: 322px;
+    padding-right: 23px;
+    background: transparent url('../images/main-tab-default.png') no-repeat 0 0;
+}
+
+.content section#sidebar .tab a {
+    font-size: 3em;
+    color: #FFFFFF;
+    width: 262px;
+    height: 88px;
+    padding: 30px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.content section#sidebar .tab.active:hover {
+    cursor: default;
+}
+
+.content section#sidebar .tab.index.active,
+.content section#sidebar .tab.index:hover {
+    background: transparent url('../images/main-tab-active-sprite.png') no-repeat 0 0;
+}
+
+.content section#sidebar .tab.research.active,
+.content section#sidebar .tab.research:hover {
+    background: transparent url('../images/main-tab-active-sprite.png') no-repeat 0 -148px;
+}
+
+.content section#sidebar .tab.about.active,
+.content section#sidebar .tab.about:hover {
+    background: transparent url('../images/main-tab-active-sprite.png') no-repeat 0 -296px;
+}
+
+/*Main Content---------------------------------*/
+
+.content section#main {
+    margin-left: 330px;
+    position: relative;
+}
+
+.content section#main .tab {
+    width: 629px;
+    height: 460px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.content section#main .tab.active {
+    z-index: 10;
+}
+
+.content section#main .tab#index_tab {
+    background: transparent url('../images/main-tab-index.jpg') no-repeat 0 0;
+}
+
+.content section#main .tab#research_tab {
+    background: transparent url('../images/main-tab-research.jpg') no-repeat 0 0;
+}
+
+.content section#main .tab#about_tab {
+    background: transparent url('../images/main-tab-index.jpg') no-repeat 0 0;
+}
+
+.content section#main .tab h2 {
+    max-width: 380px;
+    padding: 77px 0 0 28px;
+}
+
+.content section#main .tab h2 p {
+    font-size: 3.4em;
+    color: #FFFFFF;
+    padding: 8px;
+    margin-bottom: 8px;
+    float: left;
+}
+
+.content section#main .tab.index h2 p {
+    background-color: #79AFDD;
+}
+
+.content section#main .tab.research h2 p {
+    background-color: #9EBA38;
+}
+
+.content section#main .tab.about h2 p {
+    background-color: #F8981D;
+}
+
+
+
+/*FOOTER---------------------------------------*/
+
+footer {
+    margin-top: 45px;
+    margin-bottom: 50px;
+}
+
+footer #disclaimer {
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #626262;
+    margin-bottom: 26px;
+}
+
+footer #copyright {
+    font-size: 1.2em;
+    color: #626262;
+    float: left;
+}
+
+footer #legal_menu {
+    font-size: 1.2em;
+    float: right;
+}
+
+footer #legal_menu li {
+    float: left;
+}
+
