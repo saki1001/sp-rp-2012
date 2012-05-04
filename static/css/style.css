@@ -31,7 +31,7 @@ a:visited {
 /*HEADER---------------------------------------*/
 header {
     height: 94px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 header #logo {
@@ -42,36 +42,102 @@ header #logo {
     float: left;
 }
 
-header nav.main_menu {
-    margin-top: 66px;
+header #navigation {
     float: right;
 }
 
-header nav.main_menu h3 a {
-    color: #000000;
+header #navigation .menu {
+    margin-top: 66px;
+    float: left;
+    position: relative;
+    z-index: 20;
+}
+
+header #navigation .menu h3 {
+    padding-bottom: 20px;
+}
+
+header #navigation .menu h3 a {
+    color: #2C2C2C;
     font-size: 2em;
     padding: 9px;
 }
 
-header nav.main_menu h3 a:hover {
-/*    font-family: 'Myriad Pro Bold', 'Lucida Grande Bold', 'Lucida Sans', Verdana, Arial, sans-serif;*/
-    color: #FFFFFF;
+header #navigation .menu .sub_menu {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 240px;
+    display: none;
+    padding-top: 15px;
+    background: transparent url('../images/header-menu-arrow-sprite.png') no-repeat 0 0;
 }
 
-header nav.main_menu.index h3 a:hover {
+header #navigation .menu.index .sub_menu {
+    left: 0;
+    background-position: 0 0;
+}
+
+header #navigation .menu.research .sub_menu {
+    background-position: 0 -20px;
+}
+
+header #navigation .menu.about .sub_menu {
+    background-position: 0 -40px;
+}
+
+header #navigation .menu.active .sub_menu {
+    display: block;
+}
+
+header #navigation .menu .sub_menu ul {
+    padding: 20px 20px 30px 20px;
+    width: 200px;
+}
+
+/*Specific background colors*/
+header #navigation .menu.index .sub_menu ul {
     background-color: #79AFDD;
 }
 
-header nav.main_menu.research h3 a:hover {
+header #navigation .menu.research .sub_menu ul {
     background-color: #9EBA38;
 }
 
-header nav.main_menu.about h3 a:hover {
+header #navigation .menu.about .sub_menu ul {
     background-color: #F8981D;
 }
 
-header nav.main_menu ul {
-    display: none;
+header #navigation .menu .sub_menu ul li {
+    margin-bottom: 8px;
+}
+
+header #navigation .menu .sub_menu ul li a {
+    color: #FFFFFF;
+    font-size: 15px;
+}
+
+header #navigation .menu .sub_menu ul li a:hover {
+    text-decoration: underline;
+}
+
+/*Highlight for selected page*/
+#index header #navigation .menu.index h3 a {
+    font-family: 'Myriad Pro Bold', 'Lucida Grande Bold', 'Lucida Sans', Verdana, Arial, sans-serif;
+    color: #FFFFFF;
+    background-color: #79AFDD;
+}
+
+#research header #navigation .menu.research h3 a {
+    font-family: 'Myriad Pro Bold', 'Lucida Grande Bold', 'Lucida Sans', Verdana, Arial, sans-serif;
+    color: #FFFFFF;
+    background-color: #9EBA38;
+}
+
+#about header #navigation .menu.about h3 a {
+    font-family: 'Myriad Pro Bold', 'Lucida Grande Bold', 'Lucida Sans', Verdana, Arial, sans-serif;
+    color: #FFFFFF;
+    background-color: #F8981D;
 }
 
 
@@ -116,22 +182,15 @@ header nav.main_menu ul {
     display: block;
 }
 
-.content section#sidebar .tab.active:hover {
-    cursor: default;
-}
-
-.content section#sidebar .tab.index.active,
-.content section#sidebar .tab.index:hover {
+.content section#sidebar .tab.index.current {
     background: transparent url('../images/main-tab-active-sprite.png') no-repeat 0 0;
 }
 
-.content section#sidebar .tab.research.active,
-.content section#sidebar .tab.research:hover {
+.content section#sidebar .tab.research.current {
     background: transparent url('../images/main-tab-active-sprite.png') no-repeat 0 -148px;
 }
 
-.content section#sidebar .tab.about.active,
-.content section#sidebar .tab.about:hover {
+.content section#sidebar .tab.about.current {
     background: transparent url('../images/main-tab-active-sprite.png') no-repeat 0 -296px;
 }
 
@@ -148,10 +207,12 @@ header nav.main_menu ul {
     position: absolute;
     top: 0;
     left: 0;
+    display: none;
     z-index: 1;
 }
 
-.content section#main .tab.active {
+.content section#main .tab.current {
+    display: block;
     z-index: 10;
 }
 
@@ -164,7 +225,7 @@ header nav.main_menu ul {
 }
 
 .content section#main .tab#about_tab {
-    background: transparent url('../images/main-tab-index.jpg') no-repeat 0 0;
+    background: transparent url('../images/main-tab-about.jpg') no-repeat 0 0;
 }
 
 .content section#main .tab h2 {
@@ -221,5 +282,9 @@ footer #legal_menu {
 
 footer #legal_menu li {
     float: left;
+}
+
+footer #legal_menu li a:hover {
+    text-decoration: underline;
 }
 
