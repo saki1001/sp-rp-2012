@@ -33,5 +33,5 @@ $(document).ready(function() {
     };
     
     // Bind hovering over sidebar links to tab activation
-    $('#home #sidebar .tab a').bind('hover', activateTab);
+    $('#sidebar .tab a').bind('hover', activateTab);
 });
