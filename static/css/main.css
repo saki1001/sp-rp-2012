@@ -1,0 +1,121 @@
+/*clearfix with overflow*/
+
+.content {
+    overflow: hidden;
+}
+
+/*Top Border Colors*/
+#indices .content {
+    border-top: solid 10px #79AFDD;
+}
+
+#research .content {
+    border-top: solid 10px #9EBA38;
+}
+
+#about .content {
+    border-top: solid 10px #F8981D;
+}
+
+/*Sidebar*/
+#sidebar {
+    width: 252px;
+    height: 236px;
+    padding: 17px 0;
+    float: left;
+}
+
+/*Sidebar background colors*/
+#indices #sidebar {
+    background-color: #BDD8EE;
+}
+
+#research #sidebar {
+    background-color: #B7CC6B;
+}
+
+#about #sidebar {
+    background-color: #FCCD90;
+}
+
+/*Sidebar headings*/
+#sidebar h3 a {
+    font-size: 1.8em;
+    color: #FFFFFF;
+    padding: 15px 13px 11px 13px;
+    display: block;
+}
+
+#sidebar h3.current a {
+    font-family: 'MyriadPro-Bold', 'Lucida Grande', 'Lucida Sans', Verdana, Arial, sans-serif;
+}
+
+/*Heading Highlight Colors*/
+#indices #sidebar h3.current,
+#indices #sidebar h3 a:hover {
+    background-color: #79AFDD;
+}
+
+#research #sidebar h3.current,
+#research #sidebar h3 a:hover {
+    background-color: #9EBA38;
+}
+
+#about #sidebar h3.current,
+#about #sidebar h3 a:hover {
+    background-color: #F8981D;
+}
+
+/*Sidebar Heading List*/
+#sidebar ul li h3 a {
+    padding: 15px 23px 11px;
+}
+
+/*Main Content*/
+#main {
+    width: 708px;
+    float: left;
+}
+
+#main .tab {
+    height: 270px;
+}
+
+#main .tab h2 {
+    padding: 58px 0 0 40px;
+}
+
+#main .tab h2 p {
+    font-size: 4em;
+}
+
+/*Images*/
+#main .tab#indices_tab {
+    background: transparent url('../images/the-index.jpg') no-repeat 0 0;
+}
+
+#main .tab#research_tab {
+    background: transparent url('../images/main-tab-research.jpg') no-repeat 0 0;
+}
+
+#main .tab#about_tab {
+    background: transparent url('../images/main-tab-about.jpg') no-repeat 0 0;
+}
+
+/*Summary Section*/
+#main .summary {
+    background-color: #F4F4F4;
+    padding: 37px;
+}
+
+#main .summary p {
+    font-family: 'Lucida Grande', 'Lucida Sans', Verdana, Arial, sans-serif;
+    font-size: 14px;
+    color: #303030;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+
+
+
+
