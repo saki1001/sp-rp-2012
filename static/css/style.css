@@ -1,4 +1,6 @@
 /*clearfix with overflow*/
+
+#main h2,
 footer {
     overflow: hidden;
 }
@@ -8,7 +10,7 @@ html {
 }
 
 body {
-    font-family: 'Myriad Pro', 'Lucida Grande', 'Lucida Sans', Verdana, Arial, sans-serif;
+    font-family: 'Lucida Grande', 'Lucida Sans', Verdana, Arial, sans-serif;
     font-size: 62.5%;
     color: #000000;
 }
@@ -26,6 +28,10 @@ a:focus,
 a:visited {
     text-decoration: none;
     color: #000000;
+}
+
+h1, h2, h3 {
+    font-family: 'MyriadPro-Regular', 'Lucida Grande', 'Lucida Sans', Verdana, Arial, sans-serif;
 }
 
 /*HEADER---------------------------------------*/
@@ -60,7 +66,26 @@ header #navigation .menu h3 {
 header #navigation .menu h3 a {
     color: #2C2C2C;
     font-size: 2em;
-    padding: 9px;
+    padding: 11px 9px 7px 9px;
+}
+
+/*Highlight for selected page*/
+#indices header #navigation .menu.indices h3 a {
+    font-family: 'MyriadPro-Bold', 'Lucida Grande Bold', 'Lucida Sans', Verdana, Arial, sans-serif;
+    color: #FFFFFF;
+    background-color: #79AFDD;
+}
+
+#research header #navigation .menu.research h3 a {
+    font-family: 'MyriadPro-Bold', 'Lucida Grande Bold', 'Lucida Sans', Verdana, Arial, sans-serif;
+    color: #FFFFFF;
+    background-color: #9EBA38;
+}
+
+#about header #navigation .menu.about h3 a {
+    font-family: 'MyriadPro-Bold', 'Lucida Grande Bold', 'Lucida Sans', Verdana, Arial, sans-serif;
+    color: #FFFFFF;
+    background-color: #F8981D;
 }
 
 header #navigation .menu .sub_menu {
@@ -73,7 +98,7 @@ header #navigation .menu .sub_menu {
     background: transparent url('../images/header-menu-arrow-sprite.png') no-repeat 0 0;
 }
 
-header #navigation .menu.index .sub_menu {
+header #navigation .menu.indices .sub_menu {
     left: 0;
     background-position: 0 0;
 }
@@ -96,7 +121,7 @@ header #navigation .menu .sub_menu ul {
 }
 
 /*Specific background colors*/
-header #navigation .menu.index .sub_menu ul {
+header #navigation .menu.indices .sub_menu ul {
     background-color: #79AFDD;
 }
 
@@ -121,143 +146,35 @@ header #navigation .menu .sub_menu ul li a:hover {
     text-decoration: underline;
 }
 
-/*Highlight for selected page*/
-#index header #navigation .menu.index h3 a {
-    font-family: 'Myriad Pro Bold', 'Lucida Grande Bold', 'Lucida Sans', Verdana, Arial, sans-serif;
+
+/*TITLES---------------------------------------*/
+#sidebar h3 a {
     color: #FFFFFF;
-    background-color: #79AFDD;
 }
 
-#research header #navigation .menu.research h3 a {
-    font-family: 'Myriad Pro Bold', 'Lucida Grande Bold', 'Lucida Sans', Verdana, Arial, sans-serif;
+#main .tab h2 p {
     color: #FFFFFF;
-    background-color: #9EBA38;
-}
-
-#about header #navigation .menu.about h3 a {
-    font-family: 'Myriad Pro Bold', 'Lucida Grande Bold', 'Lucida Sans', Verdana, Arial, sans-serif;
-    color: #FFFFFF;
-    background-color: #F8981D;
-}
-
-
-/*HOME PAGE-----------------------------------*/
-
-/*clearfix with overflow*/
-.content #main h2 {
-    overflow: hidden;
-}
-
-/*Sidebar--------------------------------------*/
-.content {
-    position: relative;
-    height: 460px;
-}
-
-.content section {
-/*    float: left;*/
-}
-
-.content section#sidebar {
-    width: 345px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 20;
-}
-
-.content section#sidebar .tab {
-    width: 322px;
-    padding-right: 23px;
-    background: transparent url('../images/main-tab-default.png') no-repeat 0 0;
-}
-
-.content section#sidebar .tab a {
-    font-size: 3em;
-    color: #FFFFFF;
-    width: 262px;
-    height: 88px;
-    padding: 30px;
-    margin-bottom: 8px;
-    display: block;
-}
-
-.content section#sidebar .tab.index.current {
-    background: transparent url('../images/main-tab-active-sprite.png') no-repeat 0 0;
-}
-
-.content section#sidebar .tab.research.current {
-    background: transparent url('../images/main-tab-active-sprite.png') no-repeat 0 -148px;
-}
-
-.content section#sidebar .tab.about.current {
-    background: transparent url('../images/main-tab-active-sprite.png') no-repeat 0 -296px;
-}
-
-/*Main Content---------------------------------*/
-
-.content section#main {
-    margin-left: 330px;
-    position: relative;
-}
-
-.content section#main .tab {
-    width: 629px;
-    height: 460px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: none;
-    z-index: 1;
-}
-
-.content section#main .tab.current {
-    display: block;
-    z-index: 10;
-}
-
-.content section#main .tab#index_tab {
-    background: transparent url('../images/main-tab-index.jpg') no-repeat 0 0;
-}
-
-.content section#main .tab#research_tab {
-    background: transparent url('../images/main-tab-research.jpg') no-repeat 0 0;
-}
-
-.content section#main .tab#about_tab {
-    background: transparent url('../images/main-tab-about.jpg') no-repeat 0 0;
-}
-
-.content section#main .tab h2 {
-    max-width: 380px;
-    padding: 77px 0 0 28px;
-}
-
-.content section#main .tab h2 p {
-    font-size: 3.4em;
-    color: #FFFFFF;
-    padding: 8px;
-    margin-bottom: 8px;
+    padding: 12px 10px 7px 10px;
+    margin-bottom: 10px;
     float: left;
 }
 
-.content section#main .tab.index h2 p {
+#main .tab.indices h2 p {
     background-color: #79AFDD;
 }
 
-.content section#main .tab.research h2 p {
+#main .tab.research h2 p {
     background-color: #9EBA38;
 }
 
-.content section#main .tab.about h2 p {
+#main .tab.about h2 p {
     background-color: #F8981D;
 }
-
-
 
 /*FOOTER---------------------------------------*/
 
 footer {
+    font-family: 'MyriadPro-Regular', 'Lucida Grande', 'Lucida Sans', Verdana, Arial, sans-serif;
     margin-top: 45px;
     margin-bottom: 50px;
 }
