@@ -1,0 +1,91 @@
+/*HOME PAGE-----------------------------------*/
+
+/*Sidebar--------------------------------------*/
+#home .content {
+    position: relative;
+    height: 460px;
+}
+
+#home .content section {
+/*    float: left;*/
+}
+
+#home section#sidebar {
+    width: 345px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
+
+#home section#sidebar .tab {
+    width: 322px;
+    padding-right: 23px;
+    background: transparent url('../images/main-tab-default.png') no-repeat 0 0;
+}
+
+#home section#sidebar .tab a {
+    font-size: 3em;
+    color: #FFFFFF;
+    width: 262px;
+    height: 88px;
+    padding: 30px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+#home section#sidebar .tab.indices.current {
+    background: transparent url('../images/main-tab-active-sprite.png') no-repeat 0 0;
+}
+
+#home section#sidebar .tab.research.current {
+    background: transparent url('../images/main-tab-active-sprite.png') no-repeat 0 -148px;
+}
+
+#home section#sidebar .tab.about.current {
+    background: transparent url('../images/main-tab-active-sprite.png') no-repeat 0 -296px;
+}
+
+/*Main Content---------------------------------*/
+
+#home section#main {
+    margin-left: 330px;
+    position: relative;
+}
+
+#home section#main .tab {
+    width: 629px;
+    height: 460px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 1;
+}
+
+#home section#main .tab.current {
+    display: block;
+    z-index: 10;
+}
+
+#home section#main .tab#indices_tab {
+    background: transparent url('../images/main-tab-index.jpg') no-repeat 0 0;
+}
+
+#home section#main .tab#research_tab {
+    background: transparent url('../images/main-tab-research.jpg') no-repeat 0 0;
+}
+
+#home section#main .tab#about_tab {
+    background: transparent url('../images/main-tab-about.jpg') no-repeat 0 0;
+}
+
+#home section#main .tab h2 {
+    max-width: 430px;
+    padding: 77px 0 0 28px;
+}
+
+#home section#main .tab h2 p {
+    font-size: 3.5em;
+}
+
