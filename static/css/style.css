@@ -12,14 +12,15 @@ html {
 body {
     font-family: 'Lucida Grande', 'Lucida Sans', Verdana, Arial, sans-serif;
     font-size: 62.5%;
-    color: #000000;
+    color: #303030;
 }
 
 header,
-.content,
+.content_wrapper,
 footer {
     width: 960px;
     margin: 0 auto;
+    padding: 0 30px;
 }
 
 a,
@@ -27,23 +28,23 @@ a:hover,
 a:focus,
 a:visited {
     text-decoration: none;
-    color: #000000;
+    color: #303030;
 }
 
 h1, h2, h3 {
-    font-family: 'MyriadPro-Regular', 'Lucida Grande', 'Lucida Sans', Verdana, Arial, sans-serif;
+/*    font-family: 'MyriadPro-Regular', 'Lucida Grande', 'Lucida Sans', Verdana, Arial, sans-serif;*/
 }
 
 /*HEADER---------------------------------------*/
 header {
-    height: 94px;
+    height: 87px;
     margin-bottom: 30px;
 }
 
 header #logo {
     width: 334px;
     height: 31px;
-    margin-top: 57px;
+    margin-top: 50px;
     font-size: 4em;
     float: left;
 }
@@ -53,7 +54,7 @@ header #navigation {
 }
 
 header #navigation .menu {
-    margin-top: 66px;
+    margin-top: 65px;
     float: left;
     position: relative;
     z-index: 20;
@@ -64,13 +65,14 @@ header #navigation .menu h3 {
 }
 
 header #navigation .menu h3 a {
+    font-family: 'MyriadPro-Regular', 'Lucida Grande', 'Lucida Sans', Verdana, Arial, sans-serif;
     color: #2C2C2C;
     font-size: 2em;
     padding: 11px 9px 7px 9px;
 }
 
 /*Highlight for selected page*/
-#indices header #navigation .menu.indices h3 a {
+/*#indices header #navigation .menu.indices h3 a {
     font-family: 'MyriadPro-Bold', 'Lucida Grande Bold', 'Lucida Sans', Verdana, Arial, sans-serif;
     color: #FFFFFF;
     background-color: #79AFDD;
@@ -86,7 +88,7 @@ header #navigation .menu h3 a {
     font-family: 'MyriadPro-Bold', 'Lucida Grande Bold', 'Lucida Sans', Verdana, Arial, sans-serif;
     color: #FFFFFF;
     background-color: #F8981D;
-}
+}*/
 
 header #navigation .menu .sub_menu {
     position: absolute;
@@ -149,25 +151,37 @@ header #navigation .menu .sub_menu ul li a:hover {
 
 /*TITLES---------------------------------------*/
 #sidebar h3 a {
+    font-family: 'MyriadPro-Regular', 'Lucida Grande', 'Lucida Sans', Verdana, Arial, sans-serif;
     color: #FFFFFF;
 }
 
-#main .tab h2 p {
+/*FIX FOR SMALL HEADING*/
+#main .main_image h2 p {
+    clear: both;
+}
+
+#main .tab h2 p,
+#main .main_image h2 p {
+    font-family: 'MyriadPro-Regular', 'Lucida Grande', 'Lucida Sans', Verdana, Arial, sans-serif;
     color: #FFFFFF;
-    padding: 12px 10px 7px 10px;
+    padding: 12px 10px 5px 10px;
     margin-bottom: 10px;
     float: left;
 }
 
-#main .tab.indices h2 p {
+#main .tab.indices h2 p,
+#indices #main .main_image h2 p {
     background-color: #79AFDD;
 }
 
-#main .tab.research h2 p {
+#main .tab.research h2 p,
+#research #main .main_image h2 p {
     background-color: #9EBA38;
 }
 
-#main .tab.about h2 p {
+#main .tab.about h2 p,
+#about #main .main_image h2 p,
+#legal #main .main_image h2 p {
     background-color: #F8981D;
 }
 
