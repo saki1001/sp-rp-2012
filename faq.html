@@ -135,39 +135,521 @@
         
         <ul class="questions">
             <li>
-                <a href="#">What is risk parity?</a>
+                <a href="#what-is-risk-parity">What is risk parity?</a>
             </li>
             <li>
-                <a href="#">How do you decide on the asset class and sub-asset class risk allocations?</a>
+                <a href="#asset-class-allocation">How do you decide on the asset class and sub-asset class risk allocations?</a>
             </li>
             <li>
-                <a href="#">Does the Salient Risk Parity Index employ leverage?</a>
+                <a href="#leverage">Does the Salient Risk Parity Index employ leverage?</a>
             </li>
             <li>
-                <a href="#">What kind of financial instruments are used to construct the Salient Risk Parity Index?</a>
+                <a href="#financial-instruments">What kind of financial instruments are used to construct the Salient Risk Parity Index?</a>
             </li>
             <li>
-                <a href="#">How does the Salient Risk Parity Index adjust to changing market volatility and correlation?</a>
+                <a href="#adjust-to-market">How does the Salient Risk Parity Index adjust to changing market volatility and correlation?</a>
             </li>
             <li>
-                <a href="#">Are commodities included in the Salient Risk Parity Index?</a>
+                <a href="#commodities">Are commodities included in the Salient Risk Parity Index?</a>
             </li>
             <li>
-                <a href="#">Are currencies included in the Salient Risk Parity Index?</a>
+                <a href="#currencies">Are currencies included in the Salient Risk Parity Index?</a>
             </li>
             <li>
-                <a href="#">Are inflation protected securities included in the Salient Risk Parity Index?</a>
+                <a href="#inflation-protected-securities">Are inflation protected securities included in the Salient Risk Parity Index?</a>
             </li>
             <li>
-                <a href="#">Is risk parity a tactical asset allocation strategy?</a>
+                <a href="#tactical-asset-allocation">Is risk parity a tactical asset allocation strategy?</a>
             </li>
             <li>
-                <a href="#">How are daily Index values calculated?</a>
+                <a href="#index-values">How are daily Index values calculated?</a>
             </li>
             <li>
-                <a href="#">Where can Salient Risk Parity Index data be found?</a>
+                <a href="#index-data">Where can Salient Risk Parity Index data be found?</a>
             </li>
         </ul>
+        <div id="what-is-risk-parity" class="question">
+            <h5>What is risk parity?</h5>
+            <p>A risk parity strategy is one in which each asset class contributes equally to the portfolio's total variance, which is a common measure of investment risk. The Salient Risk Parity Index implements risk parity across four asset classes: global equities, global developed interest rates, global credit and commodities. The index allocates a substantial portion of risk-adjusted market exposure to each of these asset classes in order to achieve diversification beyond that of a "standard" index composed 60% of stocks and 40% of bonds (60/40 index).</p>
+            <p>To make the point clearer, the figure below plots the total return on stocks and bonds, and also on the 60/40 index. The figure shows that a 60/40 index behaves similarly to an all equity allocation. In fact, from January 2000 to December 2011 98% of the variance of the 60/40 index came from the equity component.<sup><a href="#footnote-1">1</a></sup> With improved diversification investors have the potential to achieve higher returns without increasing risk or to achieve the same level of returns at lower risk.</p>
+            <figure>
+                <img src="static/images/stocks-dominate-risk-profile.jpg" width="592" height="332" alt="Stocks Dominate the Risk Profile"/>
+                <figcaption>
+                    Stocks dominate the risk profile of the 60/40 index.<br/ >
+                    Source: Bloomberg, Salient Capital Advisors, LLC as of 10/31/2011.<br/ >
+                    Past performance is no guarantee of future results.
+                </figcaption>
+            </figure>
+        </div>
+        <div id="asset-class-allocation" class="question">
+            <h5>How do you decide on the asset class and sub-asset class risk allocations?</h5>
+            <p>The Salient Risk Parity Index equally risk-weights the underlying assets at both the asset class and the sub-asset class level. This means that there are multiple levels of risk parity within the index. For example, the Global Equity asset class is one of four asset classes so it receives 1/4, or 25%, of the total index risk allocation. Within the Global Equity composite there are three sub-asset classes: U.S. Equity, Developed Non-U.S. Equity, and Emerging Market Equity. Each of these sub-asset classes receives 1/3 of the total risk allocation to equities, (1/3) × (1/4) = 8.33% of total risk portfolio. Finally, contracts within each sub asset-class are equally risk-weighted. A summary of the strategic risk allocations can be seen in the table below.</p>
+            <p>It is important to note that the risk targets were chosen naively by the Index committee and were in no way impacted by the results of backtested performance. The risk weights were selected with the intent of achieving greater diversification and of allocating to assets that have a risk premium more consistent with financial theory.</p>
+            
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <tr class="table_title">
+                <td colspan="4">Global Equity Composite Strategic Risk Allocations</td>
+              </tr>
+              <tr class="table_head">
+                <td>Asset Class</td>
+                <td>Sub-Asset Class</td>
+                <td>Contract</td>
+                <td>Target Risk Contribution</td>
+              </tr>
+              <tr>
+                <td>Equities</td>
+                <td>US</td>
+                <td>S&amp;P Futures</td>
+                <td>2.8%</td>
+              </tr>
+              <tr>
+                <td>Equities</td>
+                <td>US</td>
+                <td>S&amp;P Mid Cap Futures</td>
+                <td>2.8%</td>
+              </tr>
+              <tr>
+                <td>Equities</td>
+                <td>US</td>
+                <td>Russell 2000 Futures</td>
+                <td>2.8%</td>
+              </tr>
+              <tr>
+                <td>Equities</td>
+                <td>Developed (Ex-US)</td>
+                <td>TSX 60 Futures (Canada)</td>
+                <td>0.9%</td>
+              </tr>
+              <tr>
+                <td>Equities</td>
+                <td>Developed (Ex-US)</td>
+                <td>FTSE Futures (UK)</td>
+                <td>0.9%</td>
+              </tr>
+              <tr>
+                <td>Equities</td>
+                <td>Developed (Ex-US)</td>
+                <td>CAC Futures (France)</td>
+                <td>0.9%</td>
+              </tr>
+              <tr>
+                <td>Equities</td>
+                <td>Developed (Ex-US)</td>
+                <td>DAX Futures (Germany)</td>
+                <td>0.9%</td>
+              </tr>
+              <tr>
+                <td>Equities</td>
+                <td>Developed (Ex-US)</td>
+                <td>MIB Futures (Italy)</td>
+                <td>0.9%</td>
+              </tr>
+              <tr>
+                <td>Equities</td>
+                <td>Developed (Ex-US)</td>
+                <td>IBEX Futures (Spain)</td>
+                <td>0.9%</td>
+              </tr>
+              <tr>
+                <td>Equities</td>
+                <td>Developed (Ex-US)</td>
+                <td>OMX Futures (Sweden)</td>
+                <td>0.9%</td>
+              </tr>
+              <tr>
+                <td>Equities</td>
+                <td>Developed (Ex-US)</td>
+                <td>TOPIX Futures (Japan)</td>
+                <td>0.9%</td>
+              </tr>
+              <tr>
+                <td>Equities</td>
+                <td>Developed (Ex-US)</td>
+                <td>SPI 200 Futures (Australia)</td>
+                <td>0.9%</td>
+              </tr>
+              <tr>
+                <td>Equities</td>
+                <td>Emerging</td>
+                <td>Hang Seng Futures (Hong Kong)</td>
+                <td>0.9%</td>
+              </tr>
+              <tr>
+                <td>Equities</td>
+                <td>Emerging</td>
+                <td>MSCI Taiwan Futures (Taiwan)</td>
+                <td>1.4%</td>
+              </tr>
+              <tr>
+                <td>Equities</td>
+                <td>Emerging</td>
+                <td>JSE Futures (South Africa)</td>
+                <td>1.4%</td>
+              </tr>
+              <tr>
+                <td>Equities</td>
+                <td>Emerging</td>
+                <td>HSCEI Futures (China)</td>
+                <td>1.4%</td>
+              </tr>
+              <tr>
+                <td>Equities</td>
+                <td>Emerging</td>
+                <td>NIFTY Futures (India)</td>
+                <td>1.4%</td>
+              </tr>
+              <tr>
+                <td>Equities</td>
+                <td>Emerging</td>
+                <td>KOSPI Futures (Korea)</td>
+                <td>1.4%</td>
+              </tr>
+              <tr class="table_total">
+                <td>Equities Total</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>25.0%</td>
+              </tr>
+            </table>
+            
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <tr class="table_title">
+                <td colspan="4">Interest Rate Composite Strategic Risk Allocations</td>
+              </tr>
+              <tr class="table_head">
+                <td>Asset Class</td>
+                <td>Sub-Asset Class</td>
+                <td>Contract</td>
+                <td>Target Risk Contribution</td>
+              </tr>
+              <tr>
+                <td>Interest Rates</td>
+                <td>&mdash;</td>
+                <td>US 10-Year Futures</td>
+                <td>4.2%</td>
+              </tr>
+              <tr>
+                <td>Interest Rates</td>
+                <td>&mdash;</td>
+                <td>Canada 10-Year Futures</td>
+                <td>4.2%</td>
+              </tr>
+              <tr>
+                <td>Interest Rates</td>
+                <td>&mdash;</td>
+                <td>Bund 10-Year Futures</td>
+                <td>4.2%</td>
+              </tr>
+              <tr>
+                <td>Interest Rates</td>
+                <td>&mdash;</td>
+                <td>Gilt 10-Year Futures</td>
+                <td>4.2%</td>
+              </tr>
+              <tr>
+                <td>Interest Rates</td>
+                <td>&mdash;</td>
+                <td>Japan 10-Year Futures</td>
+                <td>4.2%</td>
+              </tr>
+              <tr>
+                <td>Interest Rates</td>
+                <td>&mdash;</td>
+                <td>Australia 10-Year Futures</td>
+                <td>4.2%</td>
+              </tr>
+              <tr class="table_total">
+                <td>Interest Rates Total</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>25.0%</td>
+              </tr>
+            </table>
+            
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tr class="table_title">
+                <td colspan="4">Commodity Composite Strategic Risk Allocations</td>
+              </tr>
+              <tr class="table_head">
+                <td>Asset Class</td>
+                <td>Sub-Asset Class</td>
+                <td>Contract</td>
+                <td>Target Risk Contribution</td>
+              </tr>
+              <tr>
+                <td>Commodities</td>
+                <td>Energy</td>
+                <td>Crude Oil Futures</td>
+                <td>1.4%</td>
+              </tr>
+              <tr>
+                <td>Commodities</td>
+                <td>Energy</td>
+                <td>Brent Crude Futures</td>
+                <td>1.4%</td>
+              </tr>
+              <tr>
+                <td>Commodities</td>
+                <td>Energy</td>
+                <td>Natural Gas Futures</td>
+                <td>1.4%</td>
+              </tr>
+              <tr>
+                <td>Commodities</td>
+                <td>Energy</td>
+                <td>Heating Oil Futures</td>
+                <td>1.4%</td>
+              </tr>
+              <tr>
+                <td>Commodities</td>
+                <td>Energy</td>
+                <td>Gasoline Futures</td>
+                <td>1.4%</td>
+              </tr>
+              <tr>
+                <td>Commodities</td>
+                <td>Energy</td>
+                <td>Gas Oil Futures</td>
+                <td>1.4%</td>
+              </tr>
+              <tr>
+                <td>Commodities</td>
+                <td>Agriculture</td>
+                <td>Live Cattle Futures</td>
+                <td>0.9%</td>
+              </tr>
+              <tr>
+                <td>Commodities</td>
+                <td>Agriculture</td>
+                <td>Lean Hog Futures</td>
+                <td>0.9%</td>
+              </tr>
+              <tr>
+                <td>Commodities</td>
+                <td>Agriculture</td>
+                <td>Corn Futures</td>
+                <td>0.9%</td>
+              </tr>
+              <tr>
+                <td>Commodities</td>
+                <td>Agriculture</td>
+                <td>Soybean Futures</td>
+                <td>0.9%</td>
+              </tr>
+              <tr>
+                <td>Commodities</td>
+                <td>Agriculture</td>
+                <td>Sugar Futures</td>
+                <td>0.9%</td>
+              </tr>
+              <tr>
+                <td>Commodities</td>
+                <td>Agriculture</td>
+                <td>Cotton Futures</td>
+                <td>0.9%</td>
+              </tr>
+              <tr>
+                <td>Commodities</td>
+                <td>Agriculture</td>
+                <td>Wheat Futures</td>
+                <td>0.9%</td>
+              </tr>
+              <tr>
+                <td>Commodities</td>
+                <td>Agriculture</td>
+                <td>Coffee Futures</td>
+                <td>0.9%</td>
+              </tr>
+              <tr>
+                <td>Commodities</td>
+                <td>Agriculture</td>
+                <td>Cocoa Futures</td>
+                <td>0.9%</td>
+              </tr>
+              <tr>
+                <td>Commodities</td>
+                <td>Metals</td>
+                <td>Gold Futures</td>
+                <td>1.2%</td>
+              </tr>
+              <tr>
+                <td>Commodities</td>
+                <td>Metals</td>
+                <td>Copper Futures</td>
+                <td>1.2%</td>
+              </tr>
+              <tr>
+                <td>Commodities</td>
+                <td>Metals</td>
+                <td>Silver Futures</td>
+                <td>1.2%</td>
+              </tr>
+              <tr>
+                <td>Commodities</td>
+                <td>Metals</td>
+                <td>Zinc Futures</td>
+                <td>1.2%</td>
+              </tr>
+              <tr>
+                <td>Commodities</td>
+                <td>Metals</td>
+                <td>Nickel Futures</td>
+                <td>1.2%</td>
+              </tr>
+              <tr>
+                <td>Commodities</td>
+                <td>Metals</td>
+                <td>Lead Futures</td>
+                <td>1.2%</td>
+              </tr>
+              <tr>
+                <td>Commodities</td>
+                <td>Metals</td>
+                <td>Aluminum Futures</td>
+                <td>1.2%</td>
+              </tr>
+              <tr class="table_total">
+                <td>Commodities Total</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>25.0%</td>
+              </tr>
+            </table>
+            
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tr class="table_title">
+                <td colspan="4">Credit Composite Strategic Risk</td>
+              </tr>
+              <tr class="table_head">
+                <td>Asset Class</td>
+                <td>Sub-Asset Class</td>
+                <td>Contract</td>
+                <td>Target Risk Contribution</td>
+              </tr>
+              <tr>
+                <td>Credit</td>
+                <td>Investment Grade</td>
+                <td>US Investment Grade CDS</td>
+                <td>4.2%</td>
+              </tr>
+              <tr>
+                <td>Credit</td>
+                <td>Investment Grade</td>
+                <td>European Investment Grade CDS</td>
+                <td>4.2%</td>
+              </tr>
+              <tr>
+                <td>Credit</td>
+                <td>High Yield</td>
+                <td>US High Yield CDS</td>
+                <td>4.2%</td>
+              </tr>
+              <tr>
+                <td>Credit</td>
+                <td>High Yield</td>
+                <td>European High Yield CDS</td>
+                <td>4.2%</td>
+              </tr>
+              <tr>
+                <td>Credit</td>
+                <td>Emerging</td>
+                <td>Emerging Market CDS</td>
+                <td>8.3%</td>
+              </tr>
+              <tr class="table_total">
+                <td>Credit Total</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>25.0%</td>
+              </tr>
+            </table>
+            
+        </div>
+        <div id="leverage" class="question">
+            <h5>Does the Salient Risk Parity Index employ leverage?</h5>
+            <p>Yes. The type of leverage employed in the Salient Risk Parity Index is purely economic leverage (leverage inherently embedded in the assets traded) rather than financial leverage (money borrowed from a third party). As such, the index holdings are not dependent on any external borrowings. In fact, most equities imbed a higher degree of leverage than the Salient Risk Parity Index, as the average assets/equity ratio since 1998 for the S&P 500 is 552%.<sup><a href="#footnote-2">2</a></sup> This means that every $1.00 investment in the S&P 500 has an exposure of $5.52 to the underlying S&P 500 assets. This compares with an average gross exposure of 260% for the Salient Risk Parity Index, or a $2.60 dollar exposure to the underlying assets for each $1.00 invested.<sup><a href="#footnote-3">3</a></sup></p>
+        </div>
+        <div id="financial-instruments" class="question">
+            <h5>What kind of financial instruments are used to construct the Salient Risk Parity Index?</h5>
+            <p>The Salient Risk Parity Index is composed of futures and swap contracts.<sup><a href="#footnote-4">4</a></sup> The index holds 51 different positions all of which are deemed highly liquid by the Salient Index Committee. Futures contracts are limited to markets with large open interest and reasonable levels of daily volume.</p>
+            <p>The futures contracts and credit default swap instruments that are currently included in the Salient Risk Parity Index were not all available historically. The Salient Risk Parity Index incorporates these contracts and swaps as they become available and they appear in the Index two years thereafter, as two years of daily data are used to estimate risk parity weightings. Prior to the availability of a contract, that asset's risk-weighting is shared equally among other assets in its respective asset class. Before Credit was included in February 2009, the Equity, Commodities, and Rates asset classes each received 33% of the portfolio's target risk, instead of the 25% they currently receive.</p>
+            <figure>
+                <a href="static/pdfs/Contract-Inclusion-Over-Time.pdf" target="_blank">
+                    <img src="static/images/index-composition-over-time.jpg" width="592" height="418" alt="Index Composition Over Time"/>
+                </a>
+                <figcaption>Click image to view larger</figcaption>
+            </figure>
+        </div>
+        <div id="adjust-to-market" class="question">
+            <h5>How does the Salient Risk Parity Index adjust to changing market volatility and correlation?</h5>
+            <p>The Salient Risk Parity Index is allocated based on the historical volatility and correlation among the underlying assets and on each asset's target risk contribution. The Index targets a total annual return volatility of 10%.</p>
+            <p>Because volatility and correlation vary over time, the notional allocation to each asset class changes each month during rebalancing. This produces a dynamic Index that reduces exposure in periods of prolonged market stress, when volatility and correlation typically rise in unison, and increases exposure in periods of relative tranquility, when volatility and correlation typically fall. The dynamic nature of the allocation is designed to mitigate drawdowns.</p>
+            <p>The Salient Risk Parity Index allocations are responsive to changes in market volatility and correlation. The figure below plots the dollar allocation to each of the asset classes<sup><a href="#footnote-5">5</a></sup> in the Salient Risk Parity Index. Superimposed on the plot is the VIX Index.<sup><a href="#footnote-6">6</a></sup> Notice that the Index methodology responds immediately to the elevated market volatility in 2008, reducing dollar exposures to equities and commodities.<sup><a href="#footnote-7">7</a></sup> By reducing exposure during periods of elevated volatility, risk parity strategies seeks to protect the portfolio from large, prolonged drawdowns. In addition, as the market volatility subsided, the dollar allocation increased.<sup><a href="#footnote-3">3</a></sup></p>
+            <figure>
+                <img src="static/images/market-volatility.jpg" width="564" height="227" alt="Index Composition Over Time"/>
+                <figcaption>Past performance is not indicative of future results.</figcaption>
+            </figure>
+        </div>
+        <div id="commodities" class="question">
+            <h5>Are commodities included in the Salient Risk Parity Index?</h5>
+            <p>Yes. We believe risk parity strategies should be built around asset classes where we understand and can theoretically justify a risk premium. We believe critics of commodities as an asset class mistakenly cite the lack of theoretical justification for a risk premium in spot commodity markets as a rationale for excluding commodity futures from risk parity.</p>
+        </div>
+        <div id="currencies" class="question">
+            <h5>Are currencies included in the Salient Risk Parity Index?</h5>
+            <p>No. Currency forwards offer exposure to both emerging market currencies and interest rates in emerging market economies. The Index uses only assets for which we feel there are theoretical justifications for a risk premium. We believe that currencies are not such an asset. Thus the Index accesses emerging market credit risk premia through standardized credit default swaps, which strip out currency exposure.</p>
+            <p>It should also be noted that many currency forward and swap agreements do not meet the Salient Risk Parity Index "extremely liquid" criteria because they are not standardized.</p>
+        </div>
+        <div id="inflation-protected-securities" class="question">
+            <h5>Are inflation protected securities included in the Salient Risk Parity Index?</h5>
+            <p>No. The primary reason that the Salient Risk Parity Index does not hold sovereign inflation-protected securities is that they are typically illiquid relative to non-protected securities. This illiquidity is compensated by a risk premium that has typically declined in recent years.<sup><a href="#footnote-8">8</a></sup> Further, the combination of equity, commodity, and cash exposures that are included in the Salient Risk Parity Index are designed to contribute favorable performance during inflationary periods.<sup><a href="#footnote-9">9</a></sup></p>
+        </div>
+        <div id="tactical-asset-allocation" class="question">
+            <h5>Is risk parity a tactical asset allocation strategy?</h5>
+            <p>No. The Salient Risk Parity Index is implemented through a passive rules-based system. The Index does not rely on return forecasts of any kind in order to arrive at its allocations. Instead, the historical covariance of the underlying assets is computed to find allocations which aim to get as close as possible to the Index's target risk contributions <a href="#asset-class-allocation">(see answer to question 2)</a> assuming covariance in the coming month is equal to what it was over the last two years.<sup><a href="#footnote-10">10</a></sup></p>
+        </div>
+        <div id="index-values" class="question">
+            <h5>How are daily Index values calculated?</h5>
+            <p>Salient Risk Parity Index daily values are provided by Indxis, Inc., a third party calculation agent. Index weights are provided by Salient Advisors, L.P. on a monthly basis in order to rebalance the index on the first business day of each month. Daily values are calculated by Indxis according to the methodology detailed by Salient in the <a href="static/pdfs/Salient-RP-Index-Calculation-Methodology.pdf" target="_blank">Salient Risk Parity Index Methodology document</a>.</p>
+        </div>
+        <div id="index-data" class="question">
+            <h5>Where can Salient Risk Parity Index data be found?</h5>
+            <p>Beyond this website, the Salient Risk Parity Index daily values will be published by Bloomberg L.P. and Thompson Reuters.</p>
+        </div>
+        <div class="disclaimer">
+            <h5>Disclaimer</h5>
+            <div id="footnote-1">
+                <p><sup>1</sup>Risk contribution reflects the percentage of the portfolio’s risk, as defined by standard deviation contributed by the underlying assets. The calculation is based on modern portfolio theory’s calculation of portfolio risk based on the dollar weights, standard deviation, and correlation of underlying assets. The 60/40 portfolio used in this calculation is composed of 60% MSCI AC World Total Return Index Net and 40% Barclays Aggregate Bond Index (formerly Lehmans Aggregate Bond Index). Data is from 1/1/2000 to 12/31/2011 Note and investor cannot invest directly in these indices.</p>
+            </div>
+            <div id="footnote-2">
+                <p><sup>2</sup>Source: Bloomberg, Salient Capital Advisors, LLC from 6/30/1998 – 9/30/2011.</p>
+            </div>
+            <div id="footnote-3">
+                <p><sup>3</sup>The Salient Risk Parity Index has been retrospectively calculated and did not exist prior to January 2012. Accordingly, the results shown during the retrospective periods do not reflect actual returns. Past performance is not necessarily indicative of how the index will perform in the future.</p>
+            </div>
+            <div id="footnote-4">
+                <p><sup>4</sup>Futures contracts are standardized contracts between two parties to exchange a specified asset of standardized quality and quantity for a price agreed on today, with delivery occurring in the future. Futures trade on an exchange; the exchange serves as the counterparty for the transaction and thus helps mitigate the counterparty risk that would otherwise be inherent in such an agreement.</p>
+            </div>
+            <div id="footnote-5">
+                <p><sup>5</sup>The underlying assets that compose the Global Credit asset class did not become available until 2009.</p>
+            </div>
+            <div id="footnote-6">
+                <p><sup>6</sup>The VIX Index measures the level of expected stock market volatility currently implied by the market prices of stock options.</p>
+            </div>
+            <div id="footnote-7">
+                <p><sup>7</sup>Past performance is no guarantee of future results.</p>
+            </div>
+            <div id="footnote-8">
+                <p><sup>8</sup>See D’Amico, Kim, and Wei’s  “Tips from TIPS: the informational content of Treasury Inflation Protected Securities,” available at http://www.federalreserve.gov/pubs/feds/2010/201019/201019pap.pdf. Past performance is no guarantee of future results.</p>
+            </div>
+            <div id="footnote-9">
+                <p><sup>9</sup>Bhardwaj, Hamilton, and Ameriks (2011) shows that cash assets like T-bills are an excellent hedge for expected inflation and that commodities are far better than TIPS at hedging unexpected inflation. Available at: <a href="https://institutional.vanguard.com/VGApp/iip/site/institutional/researchcommentary/article/InvResHedgeinflation">https://institutional.vanguard.com/VGApp/iip/site/institutional/researchcommentary/article/InvResHedgeinflation</a></p>
+            </div>
+            <div id="footnote-10">
+                <p><sup>10</sup>Past performance is no guarantee of future results.</p>
+            </div>
+            <p>The Salient Risk Parity Index has been retrospectively calculated and did not exist prior to January 2012.  Accordingly, the results shown during the retrospective periods do not reflect actual returns.  Certain futures contracts and credit default swap instruments comprising the underlying asset classes were not available at inception of the retrospective Index performance calculation beginning in January 1990.  Futures contracts unavailable at Index inception were included in the underlying asset classes as available.  Credit default swaps comprising the Global Credit asset class were included beginning February 2009.  Past performance is not necessarily indicative of how the Index will perform in the future.  Index performance does not reflect the deduction of fees or expenses.  Note that an investor cannot invest directly in the Index.</p>
+            <p>The Salient Risk Parity Index is the exclusive property of Salient Advisors, L.P., which has contracted with Indxis Inc. (“Indxis”) to administer and calculate the Index. Indxis shall have no liability for any errors or omissions in calculating the Index.</p>
+        </div>
     </section>
     </div>
 </div>
