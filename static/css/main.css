@@ -155,6 +155,25 @@
     background-image: url('../images/policy-definition.jpg');
 }
 
+/*Personnel Detail Page-------------------------*/
+#about.personnel_detail #main .main_image {
+    background-image: url('../images/default-personnel.png');
+    background-color: #FCFBF9;
+}
+
+#about.personnel_detail #main .main_image ul {
+    padding: 37px 100px 0 0;
+    float: right;
+}
+
+#about.personnel_detail #main .main_image ul li {
+    background: url("../images/arrow-orange.png") no-repeat 0 8px;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding-left: 15px;
+    margin-bottom: 37px;
+}
+
 /*Summary Section------------------------------*/
 #main .summary {
     background-color: #F4F4F4;
@@ -209,9 +228,46 @@
     padding-left: 15px;
 }
 
+/*Dynamically Inserted Content-------------------*/
+#main .dynamic {
+    padding: 37px 37px 0 37px;
+    text-align: center;
+}
+
+/*Links-----------------------------------------*/
+#main .links {
+    padding: 15px 37px 0;
+}
+
+#main .links li {
+    line-height: 1.5;
+    padding-left: 12px;
+    margin-bottom: 3px;
+}
+
+#main .links li a {
+    font-size: 1.1em;
+}
+
+#indices #main .links li {
+    background: url("../images/arrow-blue.png") no-repeat 0 6px;
+}
+
+#indices #main .links li a {
+    color: #79AFDD;
+}
+
+#about #main .links li {
+    background: url("../images/arrow-orange-back.png") no-repeat 0 6px;
+}
+
+#about #main .links li a {
+    color: #F8981D;
+}
+
 /*Questions--------------------------------------*/
 #main .questions {
-    padding: 37px;
+    padding: 37px 37px 0;
 }
 
 #main .questions li {
@@ -223,6 +279,68 @@
 
 #main .questions li a:hover {
 /*    need hover style*/
+}
+
+#main .question {
+    padding: 37px 37px 0;
+    line-height: 1.5;
+}
+
+#main .question h5 {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+#main .question p,
+#main .question figure {
+    margin-top: 20px;
+}
+
+#main .question p {
+    font-size: 1.4em;
+}
+
+#main .question table {
+    font-size: 1.2em;
+    margin-top: 33px;
+}
+
+#main .question table,
+#main .question table tr,
+#main .question table td {
+    border: solid 1px #E6E6E6;
+}
+
+#main .question table td {
+    color: #848484;
+    padding: 4px 8px;
+}
+
+#main .question table .table_title {
+    text-align: center;
+}
+
+#main .question table .table_title td {
+    color: #FFFFFF;
+    background-color: #79AFDD;
+    font-weight: bold;
+    padding: 8px 0 6px;
+}
+
+#main .question table .table_head td,
+#main .question table .table_total td {
+    color: #303030;
+    background-color: #F4F4F4;
+}
+
+#main .question figure {
+    text-align: center;
+}
+
+#main .question figure figcaption {
+    font-weight: bold;
+    color: #848484;
+    margin-top: 5px;
 }
 
 /*News and Research Story Format----------------*/
@@ -307,12 +425,6 @@
     display: block;
 }
 
-#main .disclaimer {
-    margin: 27px 0 27px 27px;
-    font-size: 0.9em;
-    line-height: 1.6;
-}
-
 /*Videos-----------------------------------------*/
 #main .videos {
     background-color: #F4F4F4;
@@ -390,7 +502,29 @@
     line-height: 1.5;
 }
 
+/*Superscript------------------------------------*/
+#main sup {
+    vertical-align: super;
+    font-size: 0.6em;
+    line-height: normal;
+}
+
+#main .disclaimer sup {
+    font-size: smaller;
+    margin-right: 2px;
+}
+
+#main sup a {
+/*    color: #79AFDD;*/
+}
+
 /*Disclaimer-------------------------------------*/
+#main .disclaimer {
+    margin: 37px 0 0 37px;
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
 #main .disclaimer h5 {
     font-weight: bold;
 }
@@ -400,4 +534,6 @@
     margin-bottom: 15px;
 }
 
-
+#main .disclaimer p a {
+    color: #808080;
+}
