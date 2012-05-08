@@ -155,11 +155,6 @@ header #navigation .menu .sub_menu ul li a:hover {
     color: #FFFFFF;
 }
 
-/*FIX FOR SMALL HEADING*/
-#main .main_image h2 p {
-    clear: both;
-}
-
 #main .tab h2 p,
 #main .main_image h2 p {
     font-family: 'MyriadPro-Regular', 'Lucida Grande', 'Lucida Sans', Verdana, Arial, sans-serif;
@@ -167,6 +162,7 @@ header #navigation .menu .sub_menu ul li a:hover {
     padding: 12px 10px 5px 10px;
     margin-bottom: 10px;
     float: left;
+    clear: both;
 }
 
 #main .tab.indices h2 p,
