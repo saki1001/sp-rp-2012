@@ -35,16 +35,16 @@ h1, h2, h3 {
 /*    font-family: 'MyriadPro-Regular', 'Lucida Grande', 'Lucida Sans', Verdana, Arial, sans-serif;*/
 }
 
-/*HEADER---------------------------------------*/
+/*Header---------------------------------------*/
 header {
-    height: 87px;
-    margin-bottom: 30px;
+    height: 96px;
+    margin-bottom: 18px;
 }
 
 header #logo {
-    width: 334px;
+    width: 328px;
     height: 31px;
-    margin-top: 50px;
+    margin-top: 55px;
     font-size: 4em;
     float: left;
 }
@@ -54,14 +54,14 @@ header #navigation {
 }
 
 header #navigation .menu {
-    margin-top: 65px;
+    margin-top: 70px;
     float: left;
     position: relative;
     z-index: 20;
 }
 
 header #navigation .menu h3 {
-    padding-bottom: 20px;
+    padding-bottom: 22px;
 }
 
 header #navigation .menu h3 a {
@@ -71,28 +71,26 @@ header #navigation .menu h3 a {
     padding: 11px 9px 7px 9px;
 }
 
-/*Highlight for selected page*/
-/*#indices header #navigation .menu.indices h3 a {
-    font-family: 'MyriadPro-Bold', 'Lucida Grande Bold', 'Lucida Sans', Verdana, Arial, sans-serif;
+/*Highlight for selected page------------------*/
+#indices header #navigation .menu.indices h3 a {
     color: #FFFFFF;
     background-color: #79AFDD;
 }
 
 #research header #navigation .menu.research h3 a {
-    font-family: 'MyriadPro-Bold', 'Lucida Grande Bold', 'Lucida Sans', Verdana, Arial, sans-serif;
     color: #FFFFFF;
     background-color: #9EBA38;
 }
 
 #about header #navigation .menu.about h3 a {
-    font-family: 'MyriadPro-Bold', 'Lucida Grande Bold', 'Lucida Sans', Verdana, Arial, sans-serif;
     color: #FFFFFF;
     background-color: #F8981D;
-}*/
+}
 
+/*Header Sub Menu--------------------------------*/
 header #navigation .menu .sub_menu {
     position: absolute;
-    top: 30px;
+    top: 29px;
     right: 0;
     width: 240px;
     display: none;
@@ -122,7 +120,7 @@ header #navigation .menu .sub_menu ul {
     width: 200px;
 }
 
-/*Specific background colors*/
+/*Header Sub Menu background colors------------*/
 header #navigation .menu.indices .sub_menu ul {
     background-color: #79AFDD;
 }
@@ -185,7 +183,7 @@ header #navigation .menu .sub_menu ul li a:hover {
 
 footer {
     font-family: 'MyriadPro-Regular', 'Lucida Grande', 'Lucida Sans', Verdana, Arial, sans-serif;
-    margin-top: 45px;
+    margin-top: 42px;
     margin-bottom: 50px;
 }
 
