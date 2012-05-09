@@ -126,28 +126,28 @@
 
 #indices #main .main_image,
 #about.personnel #main .main_image {
-    background-image: url('../images/main-image-watch-and-stock.jpg');
+    background-image: url('../images/main-image/watch-and-stock.jpg');
 }
 
 #indices.performance #main .main_image,
 #indices.faq #main .main_image {
-    background-image: url('../images/main-image-gold-bricks.jpg');
+    background-image: url('../images/main-image/gold-bricks.jpg');
 }
 
 #research #main .main_image {
-    background-image: url('../images/main-image-paper-graphs.jpg');
+    background-image: url('../images/main-image/paper-graphs.jpg');
 }
 
 #research.academy #main .main_image {
-    background-image: url('../images/main-image-pen-over-graphs-cool.jpg');
+    background-image: url('../images/main-image/pen-over-graphs-cool.jpg');
 }
 
 #about #main .main_image {
-    background-image: url('../images/main-image-pen-over-graphs-warm.jpg');
+    background-image: url('../images/main-image/pen-over-graphs-warm.jpg');
 }
 
 #legal #main .main_image {
-    background-image: url('../images/main-image-policy-definition.jpg');
+    background-image: url('../images/main-image/policy-definition.jpg');
 }
 
 /*Personnel Detail Page-------------------------*/
