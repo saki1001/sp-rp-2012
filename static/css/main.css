@@ -1,5 +1,4 @@
-/*clearfix with overflow*/
-
+/*Clearfix with overflow-----------------------*/
 .content_wrapper,
 #main .tabs_nav,
 #main .summary,
@@ -8,7 +7,7 @@
     overflow: hidden;
 }
 
-/*Top Border Colors*/
+/*Top Border Colors----------------------------*/
 #indices .content {
     border-top: solid 10px #79AFDD;
 }
@@ -22,15 +21,15 @@
     border-top: solid 10px #F8981D;
 }
 
-/*Sidebar*/
+/*Sidebar--------------------------------------*/
 #sidebar {
     width: 252px;
-    height: 236px;
-    padding: 17px 0;
+    height: 233px;
+    padding: 15px 0;
     float: left;
 }
 
-/*Sidebar background colors*/
+/*Sidebar background colors--------------------*/
 #indices #sidebar {
     background-color: #BDD8EE;
 }
@@ -44,19 +43,15 @@
     background-color: #FCCD90;
 }
 
-/*Sidebar headings*/
+/*Sidebar headings-----------------------------*/
 #sidebar h3 a {
-    font-size: 1.8em;
+    font-size: 1.7em;
     color: #FFFFFF;
-    padding: 15px 13px 11px 13px;
+    padding: 14px 16px 8px 16px;
     display: block;
 }
 
-#sidebar h3.current a {
-    font-family: 'MyriadPro-Bold', 'Lucida Grande', 'Lucida Sans', Verdana, Arial, sans-serif;
-}
-
-/*Sidebar Heading Highlight Colors*/
+/*Sidebar Heading Highlight Colors-------------*/
 #indices #sidebar h3.current,
 #indices #sidebar h3 a:hover {
     background-color: #79AFDD;
@@ -74,17 +69,17 @@
     background-color: #F8981D;
 }
 
-/*Sidebar Heading List*/
+/*Sidebar Heading Indented List----------------*/
 #sidebar ul li h3 a {
-    background: url("../images/arrow-white.png") no-repeat 22px 19px;
-    padding: 15px 35px 11px;
+    background: url("../images/arrow-white.png") no-repeat 25px 19px;
+    padding: 15px 38px 11px;
 }
 
 #sidebar ul li h3.current a {
-    background: url("../images/arrow-white-bold.png") no-repeat 22px 19px;
+    background: url("../images/arrow-white-bold.png") no-repeat 25px 19px;
 }
 
-/*Main Content*/
+/*Main Content---------------------------------*/
 #main {
     width: 708px;
     float: left;
@@ -92,13 +87,13 @@
 
 #main .main_image {
     width: 708px;
-    height: 270px;
+    height: 263px;
 }
 
 #main .map,
 #main .map #map_canvas {
     width: 708px;
-    height: 270px;
+    height: 263px;
 }
 
 #main .main_image h2 {
@@ -131,28 +126,28 @@
 
 #indices #main .main_image,
 #about.personnel #main .main_image {
-    background-image: url('../images/watch-and-stock.jpg');
+    background-image: url('../images/main-image-watch-and-stock.jpg');
 }
 
 #indices.performance #main .main_image,
 #indices.faq #main .main_image {
-    background-image: url('../images/gold-bricks.jpg');
+    background-image: url('../images/main-image-gold-bricks.jpg');
 }
 
 #research #main .main_image {
-    background-image: url('../images/paper-graphs.jpg');
+    background-image: url('../images/main-image-paper-graphs.jpg');
 }
 
 #research.academy #main .main_image {
-    background-image: url('../images/pen-over-graphs-cool.jpg');
+    background-image: url('../images/main-image-pen-over-graphs-cool.jpg');
 }
 
 #about #main .main_image {
-    background-image: url('../images/pen-over-graphs-warm.jpg');
+    background-image: url('../images/main-image-pen-over-graphs-warm.jpg');
 }
 
 #legal #main .main_image {
-    background-image: url('../images/policy-definition.jpg');
+    background-image: url('../images/main-image-policy-definition.jpg');
 }
 
 /*Personnel Detail Page-------------------------*/
@@ -366,7 +361,7 @@
     border-bottom: none;
 }
 
-#main .stories .story h4 {
+#main .stories .story h4 a {
     font-weight: bold;
     font-size: 1.2em;
     color: #9EBA38;
@@ -382,7 +377,7 @@
     margin-bottom: 20px;
 }
 
-#main .stories .story a {
+#main .stories .story a.link_arrow {
     font-weight: bold;
     font-size: 1em;
     color: #9EBA38;
