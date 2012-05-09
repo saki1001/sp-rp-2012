@@ -462,15 +462,15 @@
     background-position: -64px 0;
 }
 
-/*Profiles-----------------------------------------*/
+/*Personnel Profiles---------------------------*/
 #main .profiles_row {
     padding: 37px 0 0 0;
 }
 
 #main .profiles_row .profile {
-    width: 152px;
-    height: 230px;
-    margin-left: 33px;
+    width: 157px;
+    min-height: 230px;
+    margin-left: 26px;
     overflow: hidden;
     float: left;
 }
@@ -480,21 +480,19 @@
 }
 
 #main .profiles_row .profile img {
-    border: solid 1px #D8D8D8;
 }
 
 #main .profiles_row .profile h5 {
-    font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.4em;
     line-height: 1.5;
     color: #000000;
-    margin-top: 5px;
+    margin-top: 18px;
 }
 
 #main .profiles_row .profile p {
-    font-size: 1em;
+    font-size: 1.1em;
     color: #6B6B6B;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 /*Superscript------------------------------------*/
