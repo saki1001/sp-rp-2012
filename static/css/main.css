@@ -225,6 +225,10 @@ Set the image in the file itself*/
     margin-bottom: 0;
 }
 
+#main .summary p.bold {
+    font-weight: bold;
+}
+
 #main .summary p.footnote {
     font-size: 1.2em;
 }
@@ -325,6 +329,8 @@ Set the image in the file itself*/
 #main .question table {
     font-size: 1.2em;
     margin-top: 33px;
+    border: none;
+    width: 100%;
 }
 
 #main .question table,
