@@ -4,7 +4,7 @@ $(document).ready(function() {
     var activateTab = function() {
         
         var linkParentTab = $(this).parent('h3').parent('.tab');
-        var mainTabId = '#' + $(this).attr('rel');
+        var mainTabId = '#' + $(this).attr('class');
         
         if(linkParentTab.hasClass('current')) {
             // Do nothing
