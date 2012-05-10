@@ -157,15 +157,27 @@
 }
 
 /*Personnel Detail Page-------------------------*/
+/*Unlike other pages, the main image is not a background-image
+Set the image in the file itself*/
 #about.personnel_detail #main .main_image {
-    background-image: url('../images/default-personnel.png');
+    background-image: none;
     background-color: #FCFBF9;
+    position: relative;
+}
+
+#about.personnel_detail #main .main_image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 #about.personnel_detail #main .main_image .name_title {
-    width: 380px;
-    padding-top: 70px;
+    width: 383px;
+    padding-top: 76px;
     float: right;
+    position: relative;
+    z-index: 2;
 }
 
 #about.personnel_detail #main .main_image .name_title h2 {
@@ -180,8 +192,9 @@
 #about.personnel_detail #main .main_image .name_title p {
     color: #707070;
     font-size: 1.8em;
-    max-width: 200px;
+    max-width: 300px;
     line-height: 1.3;
+    padding-left: 10px;
 }
 
 /*Summary Section------------------------------*/
