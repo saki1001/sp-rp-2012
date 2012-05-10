@@ -4,7 +4,7 @@ $(document).ready(function() {
     var showHideTabs = function() {
         
         var linkParentTab = $(this).parent('li');
-        var mainTabId = '#' + $(this).attr('rel');
+        var mainTabId = '#' + $(this).attr('class');
         
         if(linkParentTab.hasClass('current')) {
             // Do nothing
