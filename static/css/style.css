@@ -1,8 +1,13 @@
-/*clearfix with overflow*/
-
+/*Clearfix with overflow-----------------------*/
 #main h2,
-footer {
+footer,
+#dialog .outbound_link_alert .options {
     overflow: hidden;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
 }
 
 html {
@@ -13,6 +18,7 @@ body {
     font-family: 'Lucida Grande', 'Lucida Sans', Verdana, Arial, sans-serif;
     font-size: 62.5%;
     color: #303030;
+    position: relative;
 }
 
 header,
@@ -154,7 +160,8 @@ header #navigation .menu .sub_menu ul li a:hover {
 }
 
 #main .tab h2 p,
-#main .main_image h2 p {
+#main .main_image h2 p,
+#main .main_image h2 span {
     font-family: 'MyriadPro-Regular', 'Lucida Grande', 'Lucida Sans', Verdana, Arial, sans-serif;
     color: #FFFFFF;
     padding: 12px 10px 5px 10px;
@@ -179,8 +186,13 @@ header #navigation .menu .sub_menu ul li a:hover {
     background-color: #F8981D;
 }
 
-/*FOOTER---------------------------------------*/
+#main .tab.about h2 span,
+#about #main .main_image h2 span,
+#legal #main .main_image h2 span {
+    background-color: #F8981D;
+}
 
+/*Footer---------------------------------------*/
 footer {
     font-family: 'MyriadPro-Regular', 'Lucida Grande', 'Lucida Sans', Verdana, Arial, sans-serif;
     margin-top: 42px;
@@ -212,4 +224,113 @@ footer #legal_menu li {
 footer #legal_menu li a:hover {
     text-decoration: underline;
 }
+
+/*Dialog Box-------------------------------------*/
+#dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    min-width: 600px;
+    display: none;
+}
+
+#dialog.active {
+    display: block;
+}
+
+#dialog .dialog_wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+#dialog .video_player {
+    position: relative;
+    margin-top: -168px;
+    margin-left: -298px;
+    width: 595px;
+    height: 335px;
+    display: none;
+}
+
+#dialog .video_player.active {
+    display: block;
+}
+
+#dialog .outbound_link_alert {
+    position: relative;
+    margin-top: -142px;
+    margin-left: -257px;
+    width: 515px;
+    height: 284px;
+    background: #FFFFFF;
+    border: 3px solid #DBEAFA;
+    text-align: center;
+    line-height: 1.5;
+    color: #303030;
+    display: none;
+}
+
+#dialog .outbound_link_alert.active {
+    display: block;
+}
+
+#dialog .outbound_link_alert .header {
+    background-color: #79AFDD;
+    padding: 30px 100px;
+    margin-bottom: 15px;
+}
+
+#dialog .outbound_link_alert .header h5 {
+    font-family: 'MyriadPro-Regular', 'Lucida Grande', 'Lucida Sans', Verdana, Arial, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+#dialog .outbound_link_alert h6 {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#dialog .outbound_link_alert p {
+    font-size: 1.2em;
+}
+
+#dialog .outbound_link_alert .link {
+    margin-bottom: 15px;
+}
+
+#dialog .outbound_link_alert .link #outbound_link {
+    font-size: 1.3em;
+    color: #79AFDD;
+    text-decoration: underline;
+}
+
+#dialog .outbound_link_alert .options {
+    width: 275px;
+    margin: 0 auto 20px;
+}
+
+#dialog .outbound_link_alert .options p {
+    margin: 7px 10px 0 0;
+    float: left;
+}
+
+#dialog .outbound_link_alert .options a.close {
+    font-size: 1.1em;
+    padding: 8px 10px;
+    color: #FFFFFF;
+    background-color: #808080;
+    float: left;
+}
+
 
