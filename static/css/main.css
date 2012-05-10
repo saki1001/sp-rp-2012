@@ -1,6 +1,6 @@
 /*Clearfix with overflow-----------------------*/
 .content_wrapper,
-#main .tabs_nav,
+#main .tabs .tabs_nav,
 #main .summary,
 #main .videos,
 #main .profiles_row {
@@ -47,8 +47,12 @@
 #sidebar h3 a {
     font-size: 1.7em;
     color: #FFFFFF;
-    padding: 14px 16px 8px 16px;
+    padding: 9px 16px 4px 16px;
     display: block;
+}
+
+#sidebar h3.current a {
+    padding: 15px 16px 8px 16px;
 }
 
 /*Sidebar Heading Highlight Colors-------------*/
@@ -71,12 +75,13 @@
 
 /*Sidebar Heading Indented List----------------*/
 #sidebar ul li h3 a {
-    background: url("../images/arrow-white.png") no-repeat 25px 19px;
-    padding: 15px 38px 11px;
+    background: url("../images/arrow-white.png") no-repeat 25px 14px;
+    padding: 9px 38px 4px 38px;
 }
 
 #sidebar ul li h3.current a {
-    background: url("../images/arrow-white-bold.png") no-repeat 25px 19px;
+    background: url("../images/arrow-white-bold.png") no-repeat 25px 14px;
+    padding: 14px 38px 8px 38px;
 }
 
 /*Main Content---------------------------------*/
@@ -100,7 +105,8 @@
     padding: 58px 0 0 40px;
 }
 
-#main .main_image h2 p {
+#main .main_image h2 p,
+#main .main_image h2 span {
     font-size: 3.5em;
 }
 
@@ -156,17 +162,26 @@
     background-color: #FCFBF9;
 }
 
-#about.personnel_detail #main .main_image ul {
-    padding: 37px 100px 0 0;
+#about.personnel_detail #main .main_image .name_title {
+    width: 380px;
+    padding-top: 70px;
     float: right;
 }
 
-#about.personnel_detail #main .main_image ul li {
-    background: url("../images/arrow-orange.png") no-repeat 0 8px;
-    font-size: 1.4em;
-    font-weight: bold;
-    padding-left: 15px;
-    margin-bottom: 37px;
+#about.personnel_detail #main .main_image .name_title h2 {
+    padding: 0;
+}
+
+#about.personnel_detail #main .main_image .name_title h2 span {
+    display: block;
+    float: none;
+}
+
+#about.personnel_detail #main .main_image .name_title p {
+    color: #707070;
+    font-size: 1.8em;
+    max-width: 200px;
+    line-height: 1.3;
 }
 
 /*Summary Section------------------------------*/
@@ -367,9 +382,13 @@
     color: #9EBA38;
 }
 
-#main .stories .story .date {
+#main .stories .story .details {
     font-size: 1em;
     margin-bottom: 5px;
+}
+
+#main #third_party_tab .stories .story .details {
+    margin-bottom: 20px;
 }
 
 #main .stories .story .description {
@@ -387,36 +406,55 @@
 }
 
 /*Tabs-------------------------------------------*/
-#main .tabs_nav {
+#main .tabs {
     margin-top: 12px;
+    position: relative;
 }
 
-#main .tabs_nav li {
+#main .tabs .tabs_nav {
+    position: relative;
+    top: 2px;
+    left: 25px;
+    z-index: 2;
+}
+
+#main .tabs .tabs_nav li {
     text-align: center;
+    margin-right: 15px;
+    padding-bottom: 2px;
     float: left;
 }
 
-#main .tabs_nav li a {
+#main .tabs .tabs_nav li.current {
+    padding-bottom: 0;
+    border-top: 2px solid #DCDCDC;
+    border-left: 2px solid #DCDCDC;
+    border-right: 2px solid #DCDCDC;
+}
+
+#main .tabs .tabs_nav li a {
     font-weight: bold;
     font-size: 1.4em;
     color: #FFFFFF;
+    text-decoration: underline;
     background-color: #949494;
     min-width: 100px;
     padding: 15px 27px;
-    margin-right: 15px;
     display: block;
 }
 
-#main .tabs_nav li.current a {
+#main .tabs .tabs_nav li.current a {
     color: #303030;
     background-color: #F4F4F4;
+    text-decoration: none;
 }
 
-#main .tab {
+#main .tabs .tab {
+    border-top: 2px solid #DCDCDC;
     display: none;
 }
 
-#main .tab.current {
+#main .tabs .tab.current {
     display: block;
 }
 
@@ -530,3 +568,10 @@
 #main .disclaimer p a {
     color: #808080;
 }
+
+
+
+
+
+
+
