@@ -22,6 +22,6 @@ $(document).ready(function() {
         return false;
     };
     
-    // Bind hovering over sidebar links to tab activation
+    // Bind clicking on tab to show/hide tabs
     $('#main .tabs_nav a').bind('click', showHideTabs);
 });
