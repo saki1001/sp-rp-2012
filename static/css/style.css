@@ -159,8 +159,7 @@ header #navigation .menu .sub_menu ul li a:hover {
     color: #FFFFFF;
 }
 
-#main .tab h2 p,
-#main .main_image h2 p,
+#main .tab h2 span,
 #main .main_image h2 span {
     font-family: 'MyriadPro-Regular', 'Lucida Grande', 'Lucida Sans', Verdana, Arial, sans-serif;
     color: #FFFFFF;
@@ -170,20 +169,14 @@ header #navigation .menu .sub_menu ul li a:hover {
     clear: both;
 }
 
-#main .tab.indices h2 p,
-#indices #main .main_image h2 p {
+#main .tab.indices h2 span,
+#indices #main .main_image h2 span {
     background-color: #79AFDD;
 }
 
-#main .tab.research h2 p,
-#research #main .main_image h2 p {
+#main .tab.research h2 span,
+#research #main .main_image h2 span {
     background-color: #9EBA38;
-}
-
-#main .tab.about h2 p,
-#about #main .main_image h2 p,
-#legal #main .main_image h2 p {
-    background-color: #F8981D;
 }
 
 #main .tab.about h2 span,
