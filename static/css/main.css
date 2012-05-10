@@ -483,6 +483,7 @@ Set the image in the file itself*/
     background-color: #DDDDDD;
     margin-bottom: 30px;
     float: left;
+    position: relative;
 }
 
 #main .videos .video.right {
@@ -495,22 +496,33 @@ Set the image in the file itself*/
     color: #FFFFFF;
     background-color: #656565;
     padding: 6px 8px 8px;
+    position: relative;
+    z-index: 2;
 }
 
 #main .videos .video a {
     font-weight: bold;
     text-align: center;
-    color: #656565;
-    background: url("../images/video-play-sprite.png") no-repeat 0 0;
+    color: #FFFFFF;
+    background: url("../images/videos/video-play-sprite.png") no-repeat 0 0;
     padding-top: 70px;
     width: 64px;
     margin: 25px auto 0;
     display: block;
+    position: relative;
+    z-index: 2;
 }
 
 #main .videos .video a:hover {
-    color: #9EBA38;
+    color: #E6E6E6;
     background-position: -64px 0;
+}
+
+#main .videos .video img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 /*Personnel Profiles---------------------------*/
