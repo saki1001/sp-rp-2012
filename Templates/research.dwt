@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html><!-- InstanceBegin template="/Templates/master.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<!-- TemplateBeginEditable name="doctitle" -->
-<title>Salient Risk Parity Index | A Financial Index for Measuring Risk Parity Strategies</title>
-<!-- TemplateEndEditable -->
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Salient Risk Parity Index | The Most Recent News About the Risk Parity Strategy</title>
+<!-- InstanceEndEditable -->
 
 <link rel="icon" type="image/x-icon" href="../static/images/favicon.ico" />
 <link rel="stylesheet" type="text/css" href="../static/css/reset.css" />
@@ -18,14 +18,26 @@
         <script type="text/javascript" src="static/js/html5.js"></script>
 <![endif]-->
 
+<!-- InstanceBeginEditable name="head" -->
+<meta name="Keywords" content="risk parity strategy, risk parity investing, risk parity, risk parity index, equal risk, equal risk allocation" />
+<meta name="robots" content="index,follow" />
+<meta name="distribution" content="global" />
+<meta name="author" content="www.salientpartners.com <http://www.salientpartners.com>" />
+<meta name="publisher" content="Salient Partners" />
+<meta name="rating" content="general" />
+<meta name="expires" content="never" />
+<meta name="revisit-after" content="21 days" />
+
+<link rel="stylesheet" type="text/css" href="static/css/main.css" />
 <!-- TemplateBeginEditable name="head" -->
 <!-- TemplateEndEditable -->
+<!-- InstanceEndEditable -->
 
-<!-- TemplateParam name="id" type="text" value="home" -->
-<!-- TemplateParam name="class" type="text" value="" -->
+<!-- InstanceParam name="id" type="text" value="research" -->
+<!-- InstanceParam name="class" type="text" value="" passthrough="true" -->
 </head>
 
-<body id="@@(id)@@" class="@@(_document['class'])@@">
+<body id="research" class="@@@(_document['class'])@@@">
 
 <header>
     
@@ -101,15 +113,34 @@
     <div class="content">
     <!-- Sidebar -->
     <section id="sidebar">
-	    <!-- TemplateBeginEditable name="sidebar" -->
+	    <!-- InstanceBeginEditable name="sidebar" -->
         <!--Highlight item in sidebar by adding class="current" to <h3> tag -->
-	    <!-- TemplateEndEditable -->
+        <h3>
+            <a href="research.html">Research &amp; Education</a>
+        </h3>
+        <h3>
+            <a href="academy.html">Risk Parity Academy</a>
+        </h3>
+	    <!-- InstanceEndEditable -->
     </section>
     
     <!-- Main Content -->
     <section id="main">
-	    <!-- TemplateBeginEditable name="main-content" -->
-	    <!-- TemplateEndEditable -->
+	    <!-- InstanceBeginEditable name="main-content" -->
+        <div class="main_image">
+            <h2>
+                <!-- TemplateBeginEditable name="main-content-title" -->
+                <!--Each line must be in <span> tag -->
+                <span>Title Line 1</span>
+                <!-- TemplateEndEditable -->
+            </h2>
+        </div>
+        <!-- TemplateBeginEditable name="main-content-top" -->
+        <!-- TemplateEndEditable -->
+        
+        <!-- TemplateBeginEditable name="main-content-other" -->
+        <!-- TemplateEndEditable -->
+	    <!-- InstanceEndEditable -->
     </section>
     </div>
 </div>
@@ -143,8 +174,10 @@
     </nav>    
 </footer>
 
-<!-- TemplateBeginEditable name="dialog" -->
+<!-- InstanceBeginEditable name="dialog" -->
+<!-- TemplateBeginEditable name="add-dialog" -->
 <!-- TemplateEndEditable -->
+<!-- InstanceEndEditable -->
 
 <!-- Google Analytics -->
 <script type="text/javascript">
@@ -161,4 +194,4 @@
 
 </body>
 
-</html>
+<!-- InstanceEnd --></html>

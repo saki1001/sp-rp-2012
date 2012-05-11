@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html><!-- InstanceBegin template="/Templates/about.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<!-- TemplateBeginEditable name="doctitle" -->
-<title>Salient Risk Parity Index | A Financial Index for Measuring Risk Parity Strategies</title>
-<!-- TemplateEndEditable -->
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Salient Risk Parity Index | Key Personnel</title>
+<!-- InstanceEndEditable -->
 
 <link rel="icon" type="image/x-icon" href="../static/images/favicon.ico" />
 <link rel="stylesheet" type="text/css" href="../static/css/reset.css" />
@@ -18,14 +18,29 @@
         <script type="text/javascript" src="static/js/html5.js"></script>
 <![endif]-->
 
+
+<meta name="keywords" content="risk parity index, balanced risk, balanced risk allocation">
+<meta name="robots" content="index,follow" />
+<meta name="distribution" content="global" />
+<meta name="author" content="www.salientpartners.com <http://www.salientpartners.com>" />
+<meta name="publisher" content="Salient Partners" />
+<meta name="rating" content="general" />
+<meta name="expires" content="never" />
+<meta name="revisit-after" content="31 days" />
+
+<link rel="stylesheet" type="text/css" href="static/css/main.css" />
+<!-- InstanceBeginEditable name="head" -->
+<meta name="robots" content="noindex,nofollow" />
 <!-- TemplateBeginEditable name="head" -->
 <!-- TemplateEndEditable -->
+<!-- InstanceEndEditable -->
 
-<!-- TemplateParam name="id" type="text" value="home" -->
-<!-- TemplateParam name="class" type="text" value="" -->
+
+
+<!-- InstanceParam name="class" type="text" value="personnel_detail" -->
 </head>
 
-<body id="@@(id)@@" class="@@(_document['class'])@@">
+<body id="about" class="personnel_detail">
 
 <header>
     
@@ -101,15 +116,54 @@
     <div class="content">
     <!-- Sidebar -->
     <section id="sidebar">
-	    <!-- TemplateBeginEditable name="sidebar" -->
+	    <!-- InstanceBeginEditable name="sidebar" -->
         <!--Highlight item in sidebar by adding class="current" to <h3> tag -->
-	    <!-- TemplateEndEditable -->
+        <h3>
+            <a href="about.html">About Salient</a>
+        </h3>
+        <h3 class="current">
+            <a href="personnel.html">Key Personnel</a>
+        </h3>
+        <h3>
+            <a href="contact.html">Contact Us</a>
+        </h3>
+	    <!-- InstanceEndEditable -->
     </section>
     
     <!-- Main Content -->
     <section id="main">
-	    <!-- TemplateBeginEditable name="main-content" -->
-	    <!-- TemplateEndEditable -->
+	    
+        <!-- InstanceBeginEditable name="main-content-section" -->
+        <div class="main_image">
+            <!-- TemplateBeginEditable name="personnel-image" -->
+            <img src="static/images/personnel/" width="708" height="263" alt="Personnel Name" />
+            <!-- TemplateEndEditable -->
+            <div class="name_title">
+              <h2>
+                  <!-- TemplateBeginEditable name="personnel-name" -->
+                  <span>Personnel Name</span>
+                  <!-- TemplateEndEditable -->
+              </h2>
+                <!-- TemplateBeginEditable name="personnel-title" -->
+              <p>Personnel Title</p>
+              <!-- TemplateEndEditable -->
+          </div>
+        </div>
+        <!-- InstanceEndEditable -->
+        <div class="summary">
+            <!-- InstanceBeginEditable name="main-content-summary" -->
+            <!--Each new paragraph must be in <p> tag -->
+            <p>Summary Text</p>
+            <!-- InstanceEndEditable -->
+        </div>
+        <!-- InstanceBeginEditable name="main-content-other" -->
+        <ul class="links">
+            <li>
+                <a href="personnel.html">Back to Key Personnel</a>
+            </li>
+        </ul>
+        <!-- InstanceEndEditable -->
+	    
     </section>
     </div>
 </div>
@@ -143,8 +197,8 @@
     </nav>    
 </footer>
 
-<!-- TemplateBeginEditable name="dialog" -->
-<!-- TemplateEndEditable -->
+<!-- InstanceBeginEditable name="dialog" -->
+<!-- InstanceEndEditable -->
 
 <!-- Google Analytics -->
 <script type="text/javascript">
@@ -161,4 +215,4 @@
 
 </body>
 
-</html>
+<!-- InstanceEnd --></html>
