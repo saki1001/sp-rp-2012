@@ -506,7 +506,6 @@ Set the image in the file itself*/
 }
 
 #main .videos .video a {
-    font-weight: bold;
     text-align: center;
     color: #FFFFFF;
     background: url("../images/videos/video-play-sprite.png") no-repeat 0 0;
