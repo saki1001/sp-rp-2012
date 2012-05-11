@@ -406,22 +406,22 @@ Set the image in the file itself*/
 }
 
 #main #third_party_tab .stories .story .details {
-    margin-bottom: 20px;
+    margin-bottom: 0;
 }
 
 #main .stories .story .description {
     font-size: 1.2em;
-    margin-bottom: 20px;
+/*    margin-bottom: 10px;*/
 }
 
-#main .stories .story a.link_arrow {
+/*#main .stories .story a.link_arrow {
     font-weight: bold;
     font-size: 1em;
     color: #9EBA38;
     background: transparent url("../images/arrow-green.png") no-repeat right center;
     padding-right: 10px;
     margin-bottom: 10px;
-}
+}*/
 
 /*Tabs-------------------------------------------*/
 #main .tabs {
