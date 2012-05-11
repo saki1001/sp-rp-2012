@@ -11,7 +11,7 @@ $(document).ready(function() {
             
         } else {
             // Hide previous tab
-            $('.current').removeClass('current');
+            $('#main .current').removeClass('current');
             
             // Set new current tab elements
             linkParentTab.addClass('current');
