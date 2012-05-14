@@ -14,11 +14,6 @@
 <script type="text/javascript" src="../static/js/jquery-1.7.1.min.js"></script>
 <script type="text/javascript" src="../static/js/header.js"></script>
 
-<!--[if lt IE 9]>
-		<link rel="stylesheet" type="text/css" href="static/css/ie.css" />
-        <script type="text/javascript" src="static/js/html5.js"></script>
-<![endif]-->
-
 <!-- InstanceBeginEditable name="head" -->
 <meta name="keywords" content="risk parity index, balanced risk, balanced risk allocation">
 <meta name="robots" content="index,follow" />
@@ -30,9 +25,19 @@
 <meta name="revisit-after" content="31 days" />
 
 <link rel="stylesheet" type="text/css" href="static/css/main.css" />
+
 <!-- TemplateBeginEditable name="head" -->
 <!-- TemplateEndEditable -->
+
+<!-- TemplateParam name="about" type="text" value="" -->
+<!-- TemplateParam name="personnel" type="text" value="" -->
+<!-- TemplateParam name="contact" type="text" value="" -->
 <!-- InstanceEndEditable -->
+
+<!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="static/css/ie.css" />
+    <script type="text/javascript" src="static/js/html5.js"></script>
+<![endif]-->
 
 <!-- InstanceParam name="id" type="text" value="about" -->
 <!-- InstanceParam name="class" type="text" value="" passthrough="true" -->
@@ -116,13 +121,13 @@
     <section id="sidebar">
 	    <!-- InstanceBeginEditable name="sidebar" -->
         <!--Highlight item in sidebar by adding class="current" to <h3> tag -->
-        <h3>
+        <h3 class="@@(about)@@">
             <a href="about.html">About Salient</a>
         </h3>
-        <h3>
+        <h3 class="@@(personnel)@@">
             <a href="personnel.html">Key Personnel</a>
         </h3>
-        <h3>
+        <h3 class="@@(contact)@@">
             <a href="contact.html">Contact Us</a>
         </h3>
 	    <!-- InstanceEndEditable -->

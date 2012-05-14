@@ -14,11 +14,6 @@
 <script type="text/javascript" src="../static/js/jquery-1.7.1.min.js"></script>
 <script type="text/javascript" src="../static/js/header.js"></script>
 
-<!--[if lt IE 9]>
-		<link rel="stylesheet" type="text/css" href="static/css/ie.css" />
-        <script type="text/javascript" src="static/js/html5.js"></script>
-<![endif]-->
-
 <!-- InstanceBeginEditable name="head" -->
 <meta name="Keywords" content="risk parity strategy, risk parity investing, risk parity, risk parity index, equal risk, equal risk allocation" />
 <meta name="robots" content="index,follow" />
@@ -30,9 +25,18 @@
 <meta name="revisit-after" content="21 days" />
 
 <link rel="stylesheet" type="text/css" href="static/css/main.css" />
+
 <!-- TemplateBeginEditable name="head" -->
 <!-- TemplateEndEditable -->
+
+<!-- TemplateParam name="research" type="text" value="" -->
+<!-- TemplateParam name="academy" type="text" value="" -->
 <!-- InstanceEndEditable -->
+
+<!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="static/css/ie.css" />
+    <script type="text/javascript" src="static/js/html5.js"></script>
+<![endif]-->
 
 <!-- InstanceParam name="id" type="text" value="research" -->
 <!-- InstanceParam name="class" type="text" value="" passthrough="true" -->
@@ -116,10 +120,10 @@
     <section id="sidebar">
 	    <!-- InstanceBeginEditable name="sidebar" -->
         <!--Highlight item in sidebar by adding class="current" to <h3> tag -->
-        <h3>
+        <h3 class="@@(research)@@">
             <a href="research.html">Research &amp; Education</a>
         </h3>
-        <h3>
+        <h3 class="@@(academy)@@">
             <a href="academy.html">Risk Parity Academy</a>
         </h3>
 	    <!-- InstanceEndEditable -->
