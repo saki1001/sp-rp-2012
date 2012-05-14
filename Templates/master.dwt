@@ -15,6 +15,7 @@
 <script type="text/javascript" src="../static/js/header.js"></script>
 
 <!--[if lt IE 9]>
+		<link rel="stylesheet" type="text/css" href="static/css/ie.css" />
         <script type="text/javascript" src="static/js/html5.js"></script>
 <![endif]-->
 
