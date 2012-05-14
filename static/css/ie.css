@@ -1,0 +1,55 @@
+/*TITLES---------------------------------------*/
+#main .tab h2 span,
+#main .main_image h2 span {
+    padding: 12px 10px 10px 10px;
+}
+
+/*Sidebar headings-----------------------------*/
+#sidebar h3 a {
+    font-size: 1.7em;
+    color: #FFFFFF;
+    padding: 8px 16px 8px 16px;
+    display: block;
+}
+
+#sidebar h3.current a {
+    padding: 12px 16px 12px 16px;
+}
+
+/*Sidebar Heading Indented List----------------*/
+#sidebar ul li h3 a {
+    padding: 8px 38px 8px 38px;
+}
+
+#sidebar ul li h3.current a {
+    padding: 12px 38px 12px 38px;
+}
+
+/*Map--------------------------------------------*/
+#main .map,
+#main .map #map_canvas {
+    width: 707px;
+}
+
+/*Videos-----------------------------------------*/
+#main .videos .video h4 {
+    font-size: 1.2em;
+}
+
+#main .videos .video a {
+    font-size: 0.8em;
+}
+
+/*Superscript------------------------------------*/
+#main sup {
+    font-size: 0.8em;
+}
+
+/*Personnel Profiles---------------------------*/
+#main .profiles_row .profile h5 {
+    font-size: 1.3em;
+}
+
+#main .profiles_row .profile p {
+    font-size: 1em;
+}
