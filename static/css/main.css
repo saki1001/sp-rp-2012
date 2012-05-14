@@ -80,8 +80,8 @@
 }
 
 #sidebar ul li h3.current a {
-    background: url("../images/arrow-white-bold.png") no-repeat 25px 14px;
     padding: 14px 38px 8px 38px;
+    background: url("../images/arrow-white.png") no-repeat 25px 18px;
 }
 
 /*Main Content---------------------------------*/
@@ -95,6 +95,7 @@
     height: 263px;
 }
 
+/*Google Map for Contact page*/
 #main .map,
 #main .map #map_canvas {
     width: 708px;
@@ -298,9 +299,10 @@ Set the image in the file itself*/
 
 #main .questions li {
     font-size: 1.4em;
-    background: url("../images/arrow-blue.png") no-repeat 0 center;
+    background: url("../images/arrow-blue.png") no-repeat 0 8px;
     padding-left: 15px;
     margin-bottom: 15px;
+    line-height: 1.5;
 }
 
 #main .questions li a:hover {
@@ -411,17 +413,7 @@ Set the image in the file itself*/
 
 #main .stories .story .description {
     font-size: 1.2em;
-/*    margin-bottom: 10px;*/
 }
-
-/*#main .stories .story a.link_arrow {
-    font-weight: bold;
-    font-size: 1em;
-    color: #9EBA38;
-    background: transparent url("../images/arrow-green.png") no-repeat right center;
-    padding-right: 10px;
-    margin-bottom: 10px;
-}*/
 
 /*Tabs-------------------------------------------*/
 #main .tabs {
@@ -547,6 +539,8 @@ Set the image in the file itself*/
 }
 
 #main .profiles_row .profile img {
+    min-width: 157px;
+    min-height: 155px;
 }
 
 #main .profiles_row .profile h5 {
