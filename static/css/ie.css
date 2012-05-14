@@ -1,4 +1,9 @@
-/*TITLES---------------------------------------*/
+/*Header---------------------------------------*/
+header #navigation .menu h3 a {
+    padding: 9px 9px 9px 9px;
+}
+
+/*Titles---------------------------------------*/
 #main .tab h2 span,
 #main .main_image h2 span {
     padding: 12px 10px 10px 10px;
