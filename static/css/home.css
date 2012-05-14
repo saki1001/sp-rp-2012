@@ -21,7 +21,7 @@
 #home section#sidebar .tab {
     width: 322px;
     padding-right: 23px;
-    background: transparent url('../images/home/tab-default.png') no-repeat 0 0;
+    background: transparent url('../images/home/tab-sidebar-sprites.png') no-repeat 0 -444px;
 }
 
 #home section#sidebar .tab a {
@@ -35,15 +35,15 @@
 }
 
 #home section#sidebar .tab.indices.current {
-    background: transparent url('../images/home/tab-active-sprite.png') no-repeat 0 0;
+    background: transparent url('../images/home/tab-sidebar-sprites.png') no-repeat 0 0;
 }
 
 #home section#sidebar .tab.research.current {
-    background: transparent url('../images/home/tab-active-sprite.png') no-repeat 0 -148px;
+    background: transparent url('../images/home/tab-sidebar-sprites.png') no-repeat 0 -148px;
 }
 
 #home section#sidebar .tab.about.current {
-    background: transparent url('../images/home/tab-active-sprite.png') no-repeat 0 -296px;
+    background: transparent url('../images/home/tab-sidebar-sprites.png') no-repeat 0 -296px;
 }
 
 /*Main Content---------------------------------*/
