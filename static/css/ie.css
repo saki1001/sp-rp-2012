@@ -30,12 +30,6 @@ header #navigation .menu h3 a {
     padding: 12px 38px 12px 38px;
 }
 
-/*Map--------------------------------------------*/
-#main .map,
-#main .map #map_canvas {
-    width: 707px;
-}
-
 /*Videos-----------------------------------------*/
 #main .videos .video h4 {
     font-size: 1.2em;
